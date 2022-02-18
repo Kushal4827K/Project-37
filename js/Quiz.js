@@ -76,7 +76,14 @@ class Quiz {
         // else{
         //   fill("red");
         // }
-
+       if (correctAns === "2") {
+          textSize(20)
+          text("Your answer is correct",300,250)
+        }
+        else{
+          textSize(20)
+          text("Your answer is incorrect",250,250)
+        }
         display_Answers+=30;
         textSize(20);
         text(allContestants[plr].name + ": " + allContestants[plr].answer, 250,display_Answers)
